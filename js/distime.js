@@ -7,7 +7,7 @@ myDate.getDate();  //获取当前日(1-31)
 myDate.getDay();   //获取当前星期X(0-6,0代表星期天)
 myDate.getTime();  //获取当前时间(从1970.1.1开始的毫秒数)
 myDate.getHours();  //获取当前小时数(0-23)
-myDate.getMinutes();  //获取当前分钟数(0-59)
+myDate.getMinutes();  //获取当前分钟数(0-59)var month = distime.getMonth();
 myDate.getSeconds();  //获取当前秒数(0-59)
 myDate.getMilliseconds(); //获取当前毫秒数(0-999)
 myDate.toLocaleDateString();  //获取当前日期
@@ -17,7 +17,7 @@ myDate.toLocaleString( );  //获取日期与时间
 function dis(){
 var distime = new Date();
 var year = distime.getFullYear();
-var month = distime.getMonth();
+var month = distime.getMonth()+1;
 var date = distime.getDate();
 var h = distime.getHours();
 var min = distime.getMinutes();
